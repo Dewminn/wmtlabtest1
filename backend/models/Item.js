@@ -17,6 +17,11 @@ const itemSchema = new mongoose.Schema(
       required: [true, "Price is required"],
       min: [0, "Price cannot be negative"],
     },
+    discount: {
+      type: Number,
+      required: [true, "discount is required"],
+      min: [0, "discount cannot be negative"],
+    },
     description: {
       type: String,
       required: [true, "Description is required"],
