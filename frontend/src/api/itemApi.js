@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "wmtlabtest1.railway.internal"
+  baseURL: import.meta.env.VITE_API_URL || "wmtlabtest1-production.up.railway.app"
 });
 
 export const getItems = () => API.get("/items");
